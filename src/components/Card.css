@@ -1,0 +1,15 @@
+.card {
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: grid;
+  margin: 20px 80px;
+}
+
+h2 {
+  font-weight: bold;
+  padding: 10px;
+}
+
+h3 {
+  padding: 1px 10px;
+}
