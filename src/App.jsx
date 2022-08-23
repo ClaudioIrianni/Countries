@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-import Card from "./components/Card";
 import CountrieDetails from "./components/CountrieDetails";
 
 function App() {

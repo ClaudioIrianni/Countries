@@ -6,7 +6,7 @@ const CardList = ({ countries, filteredCountrie }) => {
   const [countriesToRender, setCountriesToRender] = useState(countries);
 
   const resultCountrie = countries.filter((countrie) =>
-  countrie.name.common.toLowerCase().includes(filteredCountrie.toLowerCase())
+    countrie.name.common.toLowerCase().includes(filteredCountrie.toLowerCase())
   );
 
   useEffect(() => {

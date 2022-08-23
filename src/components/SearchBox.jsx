@@ -1,4 +1,3 @@
-
 import "../components/SearchFilterContainer.css";
 import { IconButton } from "@chakra-ui/react";
 import { Input } from "@chakra-ui/react";
@@ -11,9 +10,9 @@ const SearchBox = ({ searchInput, setSearchInput, handleSubmit }) => {
     setSearchInput(e.target.value);
   };
 
-
   return (
-    <header>
+   
+      <form>
       <IconButton
         icon={<SearchIcon />}
         onClick={handleSubmit}
@@ -21,7 +20,7 @@ const SearchBox = ({ searchInput, setSearchInput, handleSubmit }) => {
         aria-label="Search database"
       />
       <Input
-        type="search"
+        type="text"
         //Relaciono el value con el SetSearchInput
         onChange={(e) => {
           onSearchChange(e);
@@ -32,7 +31,8 @@ const SearchBox = ({ searchInput, setSearchInput, handleSubmit }) => {
         width="auto"
         placeholder="Search for a country..."
       />
-    </header>
+      </form>
+   
   );
 };
 

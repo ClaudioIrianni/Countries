@@ -13,6 +13,8 @@ function Home() {
   const [searchInput, setSearchInput] = useState("");
   const [filteredCountrie, setFilteredCountrie] = useState("");
 
+  
+
   //Fetch
   useEffect(() => {
     fetch("https://restcountries.com/v3.1/all")
@@ -30,6 +32,8 @@ function Home() {
     );
   }
 
+
+  //Envio el 
   const handleSearch = () => {
     let inputValue = searchInput;
     setFilteredCountrie(inputValue)
